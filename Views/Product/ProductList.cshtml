@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "ProductList";
+}
+
+<div>
+    <div style="background-color: burlywood;line-height: 220%;margin-left: 10%;margin-right: 10%">
+        <label style="font-size:16pt;padding-left:10px" >Product List</label>
+    </div>
+    <div style="height:70px;margin-left: 10%;margin-right: 10%">
+        <table class="tableForManage">
+            <tr class="tableTr">
+                <td>
+                    <label style="font-size:12pt;padding-left:10px;padding-top:10px" >Filters</label>
+                </td>
+            </tr>
+            <tr class="tableTr">
+                <td>
+                    <input class="buttonCustom" type="button" value="Add New" onclick="location.href='@Url.Action("AddProduct", "Product")'" />
+                </td>
+                <td style="width:80px">
+                    <input class="buttonCustom" type="button" value="Back" onclick="location.href='@Url.Action("Default", "Admin")'" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: burlywood;line-height: 220%;margin-left: 10%;margin-right: 10%">
+        <label style="font-size:16pt;padding-left:10px" >Search Result</label>
+    </div>
+    <div style="margin-left:180px;margin-top:50px">
+        <label >Get All Catagories from DB. And Click on each Catagory List of Products of particular catagories will open in below grid.</label>
+    </div>
+</div>

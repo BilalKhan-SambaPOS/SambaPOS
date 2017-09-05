@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SambaPOS_MVC3.Models.DropdownTransactionType>
+@{
+    ViewBag.Title = "AddTaxTemplate";
+}
+
+<div>
+    <div style="background-color: burlywood;line-height: 220%;margin-left: 10%;margin-right: 10%">
+        <label style="font-size:16pt;padding-left:10px" >Tax Template Definition</label>
+    </div>
+    <div style="margin-left: 10%;margin-right: 10%;margin-top:10px">
+        <table>
+            <tr>
+                <td style="width:12%">
+                    <label >Name*:</label>
+                </td>
+                <td>
+                    <input type="text" id="txtName" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:12%">
+                    <label >Account Transaction Type*:</label>
+                </td>
+                <td>
+                  @Html.DropDownList("TransactionTypeID", new SelectList(ViewBag.ListTransType, "TransactionTypeID", "TransactionType"))
+                </td>
+            </tr>
+            <tr>
+                <td style="width:12%">
+                    <label >Rate:</label>
+                </td>
+                <td>
+                    <input type="text" id="txtRate" placeholder="0" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:12%">
+                    <label >Rounding:</label>
+                </td>
+                <td>
+                    <input type="text" id="txtRounding" placeholder="0" />
+                </td>
+            </tr>
+            </table>
+    </div>
+        <div style="height:70px;margin-left: 10%;margin-right: 10%;margin-top:10px">
+        <table class="tableForManage">
+            <tr class="tableTr">
+                <td style="float:right">
+                    <input class="buttonCustom" type="button" value="Save"  />
+                </td>
+                <td style="float:right">
+                    <input class="buttonCustom" type="button" value="Back" onclick="location.href='@Url.Action("TaxTemplate", "Product")    '" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

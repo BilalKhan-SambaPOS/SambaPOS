@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "AddPriceDefinitionList";
+}
+<div>
+    <div style="background-color: burlywood;line-height: 220%;margin-left: 10%;margin-right: 10%">
+        <label style="font-size:16pt;padding-left:10px" >Price Definition</label>
+    </div>
+    <div style="margin-left: 10%;margin-right: 10%;margin-top:10px">
+        <table>
+            <tr>
+                <td style="width:12%">
+                    <label >Price Definition Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="txtPriceDefName" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:12%">
+                    <label >Price Tag*:</label>
+                </td>
+                <td>
+                    <input type="text" id="txtPriceTag" />
+                </td>
+            </tr>
+            </table>
+        </div>
+
+        <div style="height:70px;margin-left: 10%;margin-right: 10%;margin-top:10px">
+        <table class="tableForManage">
+            <tr class="tableTr">
+                <td style="float:right">
+                    <input class="buttonCustom" type="button" value="Save"  />
+                </td>
+                <td style="float:right">
+                    <input class="buttonCustom" type="button" value="Back" onclick="location.href='@Url.Action("PriceDefinitions", "Product")    '" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>

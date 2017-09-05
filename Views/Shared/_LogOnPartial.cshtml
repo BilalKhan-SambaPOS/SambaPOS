@@ -1,0 +1,29 @@
+﻿@section Scripts
+{
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function showWelcome() {
+            var welcome = document.getElementById('div1');
+            welcome.style.display = 'block';
+        }
+
+        function hideWelcome() {
+            debugger;
+            var welcome = document.getElementById('div1');
+            welcome.style.display = 'none';
+        }
+
+    </script>
+}
+
+@if(Request.IsAuthenticated) {
+    <text><strong id="logOffStrong" onmouseover="showWelcome();" onmouseout="hideWelcome();">@User.Identity.Name</strong>!
+<div id="div1" onmouseover="showWelcome();" onmouseout="hideWelcome();" style="display:none" >
+    <div class="DivLogOffPop" onmouseover="showWelcome();" onmouseout="hideWelcome();" ><a style="color:black;text-decoration:none;font-size:15px" href="/Admin/Default" >Home</a></div>
+    <div class="DivLogOffPop" onmouseover="showWelcome();" onmouseout="hideWelcome();" ><a style="color:black;text-decoration:none;font-size:15px" href="/Account/LogOff" >Log Off</a></div>
+    </div></text>
+}
+else {
+    @:<div class="DivLogIn"><a style="text-decoration:none;color:black" href="/Account/LogOn" >Sign IN</a></div>
+}

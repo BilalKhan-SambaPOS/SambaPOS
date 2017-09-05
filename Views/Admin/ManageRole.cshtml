@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "ManageRole";
+}
+
+<div>
+    <div style="background-color: burlywood;line-height: 220%;margin-left: 10%;margin-right: 10%">
+        <label style="font-size:16pt;padding-left:10px" >Manage Role</label>
+    </div>
+    <div style="padding-left:137px">
+        
+        @{
+var gd = new WebGrid(Model, canPage: true, rowsPerPage: 4, selectionFieldName: "selectedRow",ajaxUpdateContainerId: "gridContent");
+    gd.Pager(WebGridPagerModes.NextPrevious);}
+@gd.GetHtml(tableStyle: "table",
+
+        columns: gd.Columns(
+                 gd.Column("UserName", " User Name"),
+                 gd.Column("RoleName", "Role Name", style: "description"),
+                 gd.Column("RoleName", "Role", format:@<span> @{ @Html.DropDownList("RoleId", new SelectList(ViewBag.ListOfRoles, "RoleId", "RoleName")) }</span>)
+
+))
+</div>
+    <div style="height:70px;margin-left: 10%;margin-right: 10%;margin-top:10px">
+        <table class="tableForManage">
+            <tr class="tableTr">
+                <td style="width:80px">
+                    <input class="buttonCustom" type="button" value="Back" onclick="location.href='@Url.Action("Default", "Admin")'" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+

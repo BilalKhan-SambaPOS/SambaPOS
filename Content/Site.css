@@ -1,0 +1,385 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+
+
+.DivLogIn {
+    width: 33%;
+    height: 23px;
+    background-color: burlywood;
+    padding: 3px 0px 0px 16px;
+    margin-left: 54px;
+}
+
+.DivLogOffPop {
+        width: 145px;
+    height: 20px;
+    background-color: burlywood;
+    text-align: right;
+    border-color: black;
+    padding-right: 9px;
+    border: 0.1px solid;
+}
+
+.StyleMenueDiv{
+        margin-left: 12%;
+        margin-top:2px;
+    }
+
+.StyleAdminImg {
+            height: 18px;
+    width: 14px;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, #header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+header h1, #header h1 {
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px #111;
+}
+
+#main {
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu {
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+ul#menu li {
+    display: inline;
+    list-style: none;
+}
+
+
+ul#menu li.selected a {
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 12px;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+}
+
+#GroupId {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+    width:25%;
+}
+
+#TagId {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+    width:25%;
+}
+
+#ProductTimerID {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+    width:25%;
+}
+
+#DefaultTicketTypeID {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+    width: 27%;
+}
+
+#MenuID {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+    width: 27%;
+}
+
+#WarehouseID {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+    width: 27%;
+}
+
+#PriceTagID {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+    width: 27%;
+}
+
+#TicketCreationMethodID {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11pt;
+    color: #444;
+    width: 27%;
+}
+
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+
+.tableTr {
+    margin-top: 5px;
+}
+
+.buttonCustom {
+    padding: 5px;
+    background-color: burlywood;
+    float: right;
+    width: 101px;
+    font-size: 11pt;
+}
+
+.HyperLinkTobutton {
+    color: black !important;
+    background-color: burlywood;
+    padding: 5px;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+.tableAddProduct {
+    border:1px solid burlywood;
+}
+
+.tableAddProducttd {
+    border:1px solid burlywood;
+}
+
+table {
+    border-collapse: collapse;
+    width:89%
+}
+
+.tableForManage {
+    border-collapse: collapse;
+    width:100%
+}
+
+    table tfoot {
+        background-color:burlywood;
+            display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+    }
+
+    table a:-webkit-any-link {
+        color:white;
+    }
+
+table td {
+    padding: 5px;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+    background-color: black;
+    border: solid 1px #e8eef4;
+    width:44.5%;
+    color:white !important;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav, 
+#menucontainer {
+    margin-top: 40px;
+}
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
